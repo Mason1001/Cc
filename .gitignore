@@ -1,0 +1,54 @@
+# Build directories
+build/
+bin/
+lib/
+out/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Compiled files
+*.exe
+*.dll
+*.obj
+*.o
+*.a
+*.lib
+*.so
+*.dylib
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Dependencies (will need to be downloaded separately)
+libs/imgui/
+libs/onnxruntime/
+
+# Model files (large files)
+assets/models/*.onnx
+assets/models/*.pt

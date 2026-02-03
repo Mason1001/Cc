@@ -1,0 +1,14 @@
+{
+  "fovOverlayEnabled": true,
+  "fovSize": 100.0,
+  "fovColor": [1.0, 1.0, 0.0, 1.0],
+  "fovTransparency": 0.8,
+  "detectionEnabled": false,
+  "detectionConfidence": 0.5,
+  "highlightIntensity": 1.0,
+  "trackingEnabled": false,
+  "trackingPrecision": 0.7,
+  "trackingSmoothness": 0.5,
+  "trackingSpeed": 3.0,
+  "darkTheme": true
+}
