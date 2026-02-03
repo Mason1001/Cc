@@ -1,0 +1,62 @@
+{
+  "fov": {
+    "enabled": true,
+    "radius": 100,
+    "color": {
+      "r": 255,
+      "g": 0,
+      "b": 0,
+      "a": 200
+    },
+    "thickness": 2,
+    "filled": false,
+    "target_fps": 120
+  },
+  "detection": {
+    "enabled": true,
+    "model_path": "models/yolov8n.pt",
+    "confidence_threshold": 0.5,
+    "iou_threshold": 0.45,
+    "friend_color": {
+      "r": 0,
+      "g": 255,
+      "b": 0,
+      "a": 255
+    },
+    "enemy_color": {
+      "r": 255,
+      "g": 0,
+      "b": 0,
+      "a": 255
+    },
+    "friend_classes": [0],
+    "enemy_classes": [1, 2, 3]
+  },
+  "sound_tracking": {
+    "enabled": true,
+    "y_axis_sensitivity": 1.0,
+    "horizontal_range": 180,
+    "vertical_range": 90,
+    "indicator_color": {
+      "r": 255,
+      "g": 255,
+      "b": 0,
+      "a": 200
+    },
+    "indicator_size": 10
+  },
+  "overlay": {
+    "renderer": "DirectX11",
+    "width": 1920,
+    "height": 1080,
+    "transparent": true,
+    "topmost": true,
+    "vsync": false
+  },
+  "ui": {
+    "show_menu": true,
+    "menu_key": "INSERT",
+    "show_fps": true,
+    "font_size": 16
+  }
+}
