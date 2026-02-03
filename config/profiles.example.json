@@ -1,0 +1,99 @@
+{
+  "profiles": {
+    "default": {
+      "name": "Default Profile",
+      "description": "Standard configuration for general use",
+      "settings": {
+        "fovOverlayEnabled": true,
+        "fovSize": 100.0,
+        "fovColor": [1.0, 1.0, 0.0, 1.0],
+        "fovTransparency": 0.8,
+        "detectionEnabled": false,
+        "detectionConfidence": 0.5,
+        "highlightIntensity": 1.0,
+        "trackingEnabled": false,
+        "trackingPrecision": 0.7,
+        "trackingSmoothness": 0.5,
+        "trackingSpeed": 3.0,
+        "darkTheme": true
+      }
+    },
+    "minimal": {
+      "name": "Minimal Overlay",
+      "description": "Lightweight configuration with minimal features",
+      "settings": {
+        "fovOverlayEnabled": true,
+        "fovSize": 50.0,
+        "fovColor": [0.0, 1.0, 0.0, 1.0],
+        "fovTransparency": 0.5,
+        "detectionEnabled": false,
+        "detectionConfidence": 0.5,
+        "highlightIntensity": 1.0,
+        "trackingEnabled": false,
+        "trackingPrecision": 0.5,
+        "trackingSmoothness": 0.5,
+        "trackingSpeed": 2.0,
+        "darkTheme": true
+      }
+    },
+    "competitive": {
+      "name": "Competitive Gaming",
+      "description": "High precision settings for competitive play",
+      "settings": {
+        "fovOverlayEnabled": true,
+        "fovSize": 80.0,
+        "fovColor": [1.0, 0.0, 0.0, 1.0],
+        "fovTransparency": 0.6,
+        "detectionEnabled": true,
+        "detectionConfidence": 0.8,
+        "highlightIntensity": 1.5,
+        "trackingEnabled": true,
+        "trackingPrecision": 0.9,
+        "trackingSmoothness": 0.3,
+        "trackingSpeed": 5.0,
+        "darkTheme": true
+      }
+    },
+    "practice": {
+      "name": "Practice Mode",
+      "description": "Training configuration with all features enabled",
+      "settings": {
+        "fovOverlayEnabled": true,
+        "fovSize": 150.0,
+        "fovColor": [0.0, 1.0, 1.0, 1.0],
+        "fovTransparency": 0.7,
+        "detectionEnabled": true,
+        "detectionConfidence": 0.4,
+        "highlightIntensity": 2.0,
+        "trackingEnabled": true,
+        "trackingPrecision": 0.6,
+        "trackingSmoothness": 0.7,
+        "trackingSpeed": 2.5,
+        "darkTheme": true
+      }
+    },
+    "stealth": {
+      "name": "Stealth Mode",
+      "description": "Minimal visibility with essential features only",
+      "settings": {
+        "fovOverlayEnabled": true,
+        "fovSize": 40.0,
+        "fovColor": [1.0, 1.0, 1.0, 1.0],
+        "fovTransparency": 0.3,
+        "detectionEnabled": false,
+        "detectionConfidence": 0.7,
+        "highlightIntensity": 0.8,
+        "trackingEnabled": false,
+        "trackingPrecision": 0.5,
+        "trackingSmoothness": 0.5,
+        "trackingSpeed": 3.0,
+        "darkTheme": true
+      }
+    }
+  },
+  "metadata": {
+    "version": "1.0.0",
+    "created": "2026-02-03",
+    "description": "Example configuration profiles for Gaming Overlay"
+  }
+}

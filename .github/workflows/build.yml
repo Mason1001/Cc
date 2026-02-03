@@ -1,0 +1,56 @@
+name: Build Gaming Overlay
+
+on:
+  push:
+    branches: [ main, copilot/** ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Setup CMake
+      uses: lukka/get-cmake@latest
+    
+    - name: Clone Dear ImGui
+      run: |
+        New-Item -ItemType Directory -Force -Path libs
+        cd libs
+        git clone --depth 1 https://github.com/ocornut/imgui.git
+    
+    - name: Configure CMake
+      run: |
+        cmake -B build -G "Visual Studio 17 2022" -A x64
+    
+    - name: Build
+      run: |
+        cmake --build build --config Release
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: gaming-overlay-windows
+        path: build/bin/Release/
+        
+  build-info:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    
+    - name: Display project info
+      run: |
+        echo "Gaming Overlay Build Information"
+        echo "================================"
+        echo "Repository: ${{ github.repository }}"
+        echo "Branch: ${{ github.ref }}"
+        echo "Commit: ${{ github.sha }}"
+        echo ""
+        echo "Project Structure:"
+        find . -type f -name "*.cpp" -o -name "*.h" | head -20
